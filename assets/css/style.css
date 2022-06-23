@@ -1,75 +1,130 @@
-body{
-    font-size: 20px;
+body {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
-#hero{
-    height: 300px;
-    background-color: #236E8C;
-    color: white;
-    font-size: 35px;
+
+a {
+  text-decoration: none;
+  color: white;
 }
-#hero div{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+p{
+  margin: 0;
+}
+/**********/
+/**********/
+/**********/
+/* header */
+/**********/
+/**********/
+/**********/
+header {
+  background-color: #2F4F4F;
+  color: white;
+}
+
+header nav {
+  font-size: 20px;
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+
+header nav a:hover {
+  color: #F25E5E;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 #breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    text-align: center;
-  }
-  #breadcrumb li {
-    display: inline;
-    font-size: 18px;
-  }
-  #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  #breadcrumb li a {
-    color: #236E8C;
-    text-decoration: none;
-  }
-  #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  }
-
-#members{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin-top: 2rem;
+  padding: 10px 16px;
+  list-style: none;
+  text-align: center;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 250px;
-    border-radius: 5px;
-    margin: 0 1rem 1rem;
-    text-align: center;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  img {
-    border-radius: 5px 5px 0 0;
-    max-width: 150px;
-    max-height: 150px;
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
 
-  .image{
-      background-color: #236E8C;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-  }
-  .card a {
-      color: #F25E5E;
-  }
+#breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+#breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+#breadcrumb li a {
+  color: #236E8C;
+  text-decoration: none;
+}
+
+#breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/**************/
+/**************/
+/**************/
+/* dashboard */
+/**************/
+/**************/
+/**************/
+
+#dashboard {
+  height: 100%;
+  display: flex;
+}
+
+#sidebar {
+  width: 15%;
+  background-color: #C0C0C0;
+}
+
+#sidebar li {
+  text-align: center;
+  padding: 0.2rem 1rem;
+  border-bottom: 1px solid black;
+}
+
+#sidebar li:hover {
+  background-color: #2F4F4F;
+  cursor: pointer;
+}
+
+#dashboard main {
+  width: 85%;
+  background-color: #F5F5F5;
+  padding: 2rem;
+}
+#dashboard main h1 {
+  text-align: center;
+  font-size: 25px;
+}
+#dashboard main h2 {
+  font-size: 22px;
+  padding: 1rem 0;
+}
+#dashboard main .content {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem 0.5rem;
+}
+#dashboard main #edit {
+  margin-top: 2rem;
+  text-align: right;
+}
+#dashboard main #edit a {
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#dashboard main #edit a:hover {
+  background-color: #2F4F4F;
+  color: white;
+}
